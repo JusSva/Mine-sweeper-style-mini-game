@@ -1,0 +1,37 @@
+/*Prettier version that absolutely does not fucking work
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 500px; /* Adjust the margin as needed 
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0; /* Remove margin 
+    padding: 0; /* Remove padding 
+    box-sizing: border-box; /* Include border in width/height calculation 
+}*/
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#legend-container {
+    width: 200px; /* Adjust the width of the legend */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.legend-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 5px;
+}

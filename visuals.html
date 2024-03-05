@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Mine Sweeper style mini game for TTRPGs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!--Disclaimer at the top of the page-->
+    <p class="text">
+        <br>
+        <b>This is a mini game that was devised by Dael Kingsmil (Youtube: Monarchs factory; link: https://www.youtube.com/user/MonarchsFactory)
+        in her video, where she talks about how to make hunting a pack of displacer beasts more interesting and fun (link: https://www.youtube.com/watch?v=aV1-VNRqTtA&t=1559s&ab_channel=MonarchsFactory)
+        in DnD 5e. As she says in her video, this mini game is inspired by Mine Sweeper.
+        <br>
+        <br>
+    This mini game is her idea, I take no ownership over it, I only made it interactive.</b>
+    <br>
+    <br>
+    <br>
+    <!--Rules of the mini game-->
+    <b>Rules of the mini game/ how to run it:</b>
+    <br>
+    <br>
+     1) Determine the size of the grid You would like to use 
+     <br>
+     2) Determine what path did the creature, that is being hunted, take
+     <br>
+     3) You choose or let the players choose a starting position.
+     <br>
+     4) The players roll a stealth check (or the equivalent in Your system) for the entire encounter.
+        You can choose if You want the Dificulty Class (DC) to be the passive perception of the creatures they are hunting/are in the area, or do You want to
+        roll for the beasts each round.
+    <br>
+     5) If a player character (PC) is proficient with nature or survival, they can add that modifier to either their
+        stealth roll or another players. They can do this after they know what rolls were made. Multiple people can add to the same player's roll.
+    <br>
+     6) The players can then suggest what skills they want to use to track the creature. They focus their attention in one of the 4 
+        directions: N, S, E, W. These cardinal directions include things like SW, NE and so on. In other words, choosing direction N will include
+    NE, N and NW
+    <br>
+     7) Decide on the DC that the players need to pass. If they pass, they will either know that their quarry did not go into one of those 3
+    directions, or they will know the exact square the quarry moved through (if they got lucky with their guess)
+        <ul>
+            Performing the check and moving into the adjecent tile (diagonals are fine too) takes the same amount of time
+                (lets say 15 min), but the players don't have to move the moment they conclude their check, they can repeat it in a different direction.
+                Performing a check will consume another 15 min of their time.
+            </ul>
+     8) If a party member fails a skill check, they cannot perform another skill check until everyone else in the party has contributed to a skill check
+    <br>
+     9) Once the party has moved to a new tile, the beasts take their turn. This includes either making a perception check to see if they notice the party in their 
+        teritory, and/or moving to a new square to evade/abush the party</p>
+    
+    <!--Making the grid of the map, where the tokens will be placed
+    <div id="grid-container"></div>
+    <div id="legend-container">
+        <!-- Add tokens or items for the legend 
+        <div class="legend-item" draggable="true">Players</div>
+        <div class="legend-item" draggable="true">Monsters</div>
+        <div class="legend-item" draggable="true">Traps</div>
+        <div class="legend-item" draggable="true">Miscelanious</div>
+        <!-- Add more tokens as needed 
+    </div>-->
+    <div id="gridContainer"></div>
+
+    <!--Needs to also raise an error in case a <1 value number is put in or text is put in-->
+    <form id ="gridSize">
+        <label for="xSize">Grid size X:</label>
+        <input type="number" id="xSize" name="xSize" min="1">
+        <br>
+        <br>
+        <label for="ySize">Grid size Y:</label>
+        <input type="number" id="ySize" name="ySize" min="1">
+    </form>
+    <br>
+    <button id="generateGrid">Generate Grid</button>
+
+<script src = 'script.js'></script>
+
+
+
+
+
+
+
+
+
+
+</body>
