@@ -60,9 +60,18 @@
         <div class="legend-item" draggable="true">Miscelanious</div>
         <!-- Add more tokens as needed 
     </div>-->
+    <div>
+        <p>Turn: <span id='turn-count'></span></p>
+    </div>
     <div id="gridContainer"></div>
+    <div class="tokenContainer">
+        <div class = 'Player-preview Player' draggable="true">Players</div>
+        <div class = 'Monster-preview Monster' draggable="true">Mon-<br>sters</div>
+        <div class = 'Trap-preview Trap' draggable="true">Traps</div>
+        <div class = 'Miscelanious-preview Miscelanious' draggable="true">Miscel-<br>anious</div>
+    </div>
 
-    <!--Needs to also raise an error in case a <1 value number is put in or text is put in-->
+    <!--Create the part where the user can specify what size grid they want-->
     <form id ="gridSize">
         <label for="xSize">Grid size X:</label>
         <input type="number" id="xSize" name="xSize" min="1">
